@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="images/logo.png" alt="Restaurant Logo" class="logo">
+    </header>
+<br>
+<br>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="index.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="dessert.html">Dessert</a>
+    </nav>
+
+    <!-- MENU -->
+    <section class="menu">
+
+        <div class="menu-item">
+            <img src="images/chicken.jpg" alt="Fried Chicken">
+            <h3>Max's Fried Chicken ₱350</h3>
+            <input type="number" id="item1" min="0" value="0">
+        </div>
+
+        <div class="menu-item">
+            <img src="images/Beef Steak.jpg" alt="Burger Steak">
+            <h3>Filipino Beef Steak ₱238</h3>
+            <input type="number" id="item2" min="0" value="0">
+        </div>
+
+        <div class="menu-item">
+            <img src="images/spaghetti.jpg" alt="Spaghetti">
+            <h3>Pasta Spaghetti <div>₱220</h3>
+            <input type="number" id="item3" min="0" value="0">
+        </div>
+
+    </section>
+
+    <!-- SENIOR DISCOUNT SECTION -->
+    <section class="discount-section">
+        <label style="color: white;">Enter Age:</label>
+        <input type="number" id="age">
+
+        <button onclick="computeTotal()" style="color: black;">Place Order</button>
+
+        <div class="result">
+            <p style="color: white;">Original Total: ₱<span id="originalTotal">0</span></p>
+            <p style="color: white;">Discount (12%): ₱<span id="discount">0</span></p>
+            <p style="color: white;"><strong>Final Total: ₱<span id="finalTotal">0</span></strong></p>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>

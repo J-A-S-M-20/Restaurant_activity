@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max's Restaurant - Drinks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Max's Restaurant Logo" class="logo">
+</header>
+<br>
+<br>
+<nav>
+    <a href="index.html">Main Course</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="dessert.html">Dessert</a>
+</nav>
+
+<section class="menu">
+
+    <div class="menu-item">
+        <img src="images/coconut.jpg" alt="Fresh Buko Juice">
+        <h3>Fresh Buko Juice <p>₱95</h3>
+        <input type="number" id="item1" min="0" value="0">
+    </div>
+
+    <div class="menu-item">
+        <img src="images/tea.jpg" alt="Iced Tea">
+        <h3>Iced Tea <div> ₱85</h3>
+        <input type="number" id="item2" min="0" value="0">
+    </div>
+
+    <div class="menu-item">
+        <img src="images/mango.jpg" alt="Mango Shake">
+        <h3>Mango Shake <div> ₱120</h3>
+        <input type="number" id="item3" min="0" value="0">
+    </div>
+
+</section>
+
+<section class="discount-section">
+    <label style="color: white;">Enter Age:</label>
+    <input type="number" id="age">
+
+    <button onclick="computeTotal()">Place Order</button>
+
+    <div class="result">
+        <p style="color: white;">Original Total: ₱<span id="originalTotal">0</span></p>
+        <p style="color: white;">Discount (12%): ₱<span id="discount">0</span></p>
+        <p style="color: white;"><strong>Final Total: ₱<span id="finalTotal">0</span></strong></p>
+    </div>
+</section>
+
+<script src="drinks.js"></script>
+</body>
+</html>

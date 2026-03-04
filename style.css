@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-   background-image: url("../images/background1.jpeg");
+   background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,3 +55,4 @@ nav a {
     font-size: 18px;
 
 }
+
